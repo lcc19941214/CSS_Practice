@@ -37,6 +37,10 @@ select,input,img,select{vertical-align:middle;}
 	clear: both;
 	height: 0;
 }
+.g-container .m-box .u-box-wrapper{
+	margin: 0 auto;
+	width:310px;
+}
 .g-container .m-box .u-box{
 	width: 100px;
 	height: 100px;
@@ -44,6 +48,9 @@ select,input,img,select{vertical-align:middle;}
 	margin-bottom: 5px;
 	border-radius: 5px;
 	background-color: #F69205;
+}
+.g-container .m-box-1 .u-box:nth-child(3n){
+	margin-right: 0;
 }
 .g-container .m-box-1 .u-box{/*  float  */
 	float: left;
@@ -55,10 +62,6 @@ select,input,img,select{vertical-align:middle;}
 .g-container .m-box-2{/*  inline-block  */
 	text-align: center;
 	font-size: 0;/*  消除inline-block的空格  */
-}
-.g-container .m-box-2 .u-box-wrapper{
-	margin: 0 auto;
-	width:310px;
 }
 .g-container .m-box-2 .u-box{
 	display: inline-block;
