@@ -5,7 +5,8 @@ html{font-size: 62.5%;}/*  初始化字体 10/16*100%  */
 body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div{margin:0;padding:0;border:0;}
 body{background:#68cdd5;color:#fff;font-family:"Hiragino Sans GB","Microsoft Yahei","黑体",sans serif;}
 
-body{
+html,body{
+	height: 100%;
 	position: relative;
 }
 
@@ -14,7 +15,10 @@ select,input,img,select{vertical-align:middle;}
 
 /*  style  */
 .g-container{
-	margin-bottom: 150px;
+	margin:0 auto;
+	width: 100%;
+	min-height: 100%;
+	/*max-width: 640px;*/
 }
 .m-tab{/*  控制条  */
 	position: relative;
@@ -56,47 +60,70 @@ select,input,img,select{vertical-align:middle;}
 	position: absolute;
 	top:27px;
 	right: 17px;
-	background-position:-54px 0;
+	background-position:-55px 0;
 }
 
-.m-content{/*  正文  */
+.m-content{/*  内容  */
 	position: relative;
-	/*background-color: #68cdd5;*/
+	margin: 0 auto;
+	width: 100%;
+	max-width: 640px;
+	height: 768px;
+	background-color: #68cdd5;
+}
+.m-content::after{
+	content: ".";
+	display: inline-block;
+	height: 0;
+	overflow: hidden;
+	visibility: hidden;
+	clear: both;
 }
 .m-content .u-back{/*  返回键  */
 	position: absolute;
-	left: 35px;
-	top:17px;
-	width: 54px;
-	height: 54px;
+	top:2%;
+	left: 5.4%;
+	width: 55px;
+	height: 55px;
 	background: url("../images/css-sprite.png") 0 -61px ;
 }
-.m-content .u-logo{/*  logo  */
+.m-content .u-logo{/*  logo-outer  */
 	position: relative;
-	top: 112px;
 	text-align: center;
-	margin-bottom: 150px;
+	top:14.5%;
+}
+.m-content .u-logo img{/*  logo  */
 }
 .m-content .u-text{
+	position: relative;
+	top: 28%;
 	margin:0 auto;
 	width: 80%;
+}
+.m-content .u-text p{
 	font-size: 3rem;
-	line-height: 5.4rem;
+	line-height: 3.6rem;
 }
 .m-content .u-icon-wrapper{
-	margin: 170px auto 0;
-	width: 40%;
+	position: relative;
+	top:40%;
+	margin: 0 auto;
+	width: 80%;
+	max-width: 408px;
 }
-.m-content .u-contact ul{
+.m-content .u-contact ul{/*  icon 文本- outer  */
 }
 .m-content .u-contact li{
 	display: inline-block;
-	text-align: center;
 }
 .m-content .u-icon div{
+	margin: 0 auto;
 	width: 84px;
 	height: 84px;
 	background: url("../images/css-sprite.png");
+}
+.m-content .u-contact .u-icon-1{
+	float: left;
 }
 .m-content .u-contact .u-icon-1 div{
 	background-position: 111px 124px;
