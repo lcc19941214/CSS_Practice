@@ -176,20 +176,20 @@ select,input,img,select{vertical-align:middle;}
 	bottom: 0;
 	width: 100%;
 	max-width: 640px;
-	height: 155px;
+	height: 7.5rem;
 	background-image: url('images/footer_bg_img.png');
 	text-align: center;
 }
 .g-footer .u-btn{/*  button */
 	position: relative;
-	top: 34.5px;
+	top: 1.5rem;
 	display: inline-block;
 	width: 42%;
-	height: 86px;
+	height: 4rem;
 	margin: 0 2%;
 	border-radius: 10px;
 	font-size: 2rem;
-	line-height: 86px;
+	line-height: 4rem;
 	color: #fff;
 }
 .g-footer .u-btn--again{
