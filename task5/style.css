@@ -47,14 +47,23 @@ select,input,img,select{vertical-align:middle;}
 	min-width: 320px;
 	min-height: 100%;
 	margin: 0 auto;
-	padding-top: 64px;
+	overflow: hidden;
+}
+.main-wrap{/* wrapper of g-header & g-content  */
+	position: relative;
+	padding-top:64px;
+	box-shadow:-5px 0 50px #ddd;
+}
+.main-wrap.slide{
+	position: absolute;
+	width: 100%;
 }
 .g-header{/* top navigation  */
 	position: fixed;
-	top: 0px;
 	z-index: 999;
 	height: 64px;
 	background-color: #29bde0;
+	top: 0px;
 }
 .g-header i {/*  icon-menu  */
 	position: absolute;
@@ -65,9 +74,12 @@ select,input,img,select{vertical-align:middle;}
 	background-image: url("images/icon_menu.png");
 }
 .g-content-wrap{/*  content-outer  */
+	position: relative;
 	width: 100%;
 	box-sizing: border-box;
 	padding: 27px 36px;
+	margin: 0 auto;
+	background-color: #f0f0f0;
 }
 .g-content .m-title,
 .g-content .m-main{
@@ -167,6 +179,65 @@ select,input,img,select{vertical-align:middle;}
 	background-image: url("images/icon_next_2.png");
 	background-size: auto 100%;
 	background-repeat: no-repeat;
+}
+
+.g-sidenav{/*  sidenav on the left of container with display:none;  */
+	position: absolute;
+	z-index: -1;
+	top:0;
+	/*left: -50%;*/
+	width: 75%;
+	min-height: 100%;
+	background-color: #fff;
+	/*display: none;*/
+}
+.g-sidenav .m-nav-list{
+	width: 100%;
+}
+.g-sidenav .m-nav-list li{/*  every item  */
+	position: relative;
+	height: 79px;
+	padding-left: 106px;
+	padding-right: 50px;
+	border-bottom: 1px solid #d6d6d6;
+	font-size: 0; /*  clear inline-block bug  */
+	color: #29bed0;
+}
+.g-sidenav .m-nav-list li span{/* text  */
+	font-size: 1.5rem;
+	line-height: 79px;
+}
+.g-sidenav .m-nav-list .u-nav-icon,
+.g-sidenav .m-nav-list .u-nav-back{/* icon */
+	position: absolute;
+	display: inline-block;
+	background-image: url("images/list_icon.png");
+	background-repeat: no-repeat;
+}
+.g-sidenav .m-nav-list .u-nav-icon{
+	top: 20px;
+	left:36px;
+	width: 40px;
+	height: 40px;
+}
+.g-sidenav .m-nav-list .u-nav-icon--1{
+	background-position: 0 0;
+}
+.g-sidenav .m-nav-list .u-nav-icon--2{
+	background-position: 0 -56px;
+}
+.g-sidenav .m-nav-list .u-nav-icon--3{
+	background-position: 0 -110px;
+}
+.g-sidenav .m-nav-list .u-nav-icon--4{
+	background-position: 0 -165px;
+}
+.g-sidenav .m-nav-list .u-nav-back{
+	top: 20px;
+	right: 2.5rem;
+	width: 24px;
+	height: 40px;
+	background-position: -60px 0;	
 }
 
 
