@@ -59,7 +59,7 @@ select,input,img,select{vertical-align:middle;}
 	width: 100%;
 }
 .g-header{/* top navigation  */
-	position: fixed;
+	position: absolute;
 	z-index: 999;
 	height: 64px;
 	background-color: #29bde0;
