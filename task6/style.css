@@ -99,6 +99,7 @@ select,input,img,select{vertical-align:middle;}
 	width: 2.6rem;
 	height: 2.6rem;
 	background-image: url("images/icon_play.png");
+	cursor: pointer;
 }
 .g-source--music .u-triangle {
 	position: absolute;
@@ -125,88 +126,68 @@ select,input,img,select{vertical-align:middle;}
 }
 .g-content .m-players-wrap{
 	font-size: 0;/*  clear inline-block bug  */
-
 }
 .g-content .m-players{
 	margin-left: 1%;/*  add 1% width of .u-player's width  */
 }
+.g-content .m-players:after{
+	content: ".";
+	display: block;
+	height: 0;
+	overflow: hidden;
+	visibility: hidden;
+	clear: both;
+}
 .g-content .m-players .u-player{
 	position: relative;
+	float: left;
 	display: inline-block;
-	box-sizing:border-box;
 	width: 23%;
-	padding-bottom: 21%;
-	border: 5px solid #fff;
+	/*padding-bottom: 21%;*/
 	margin: 5%;
+}
+.g-content .m-players .u-player dl{
+	border: 5px solid #fff;
 	background-color: #f5c976;
-}
-@media screen and (max-width: 480px) and (min-width: 360px) {
-		.g-content .m-players .u-player{
-		border: 3px solid #fff;
-	}
-}
-@media screen and (max-width: 360px) {
-		.g-content .m-players .u-player{
-		border: 2px solid #fff;
-	}
-}
-.g-content .m-players .u-player dt,
-.g-content .m-players .u-player dd {
-	position: absolute;
-	width: 100%;
 	text-align: center;
 }
-.g-content .m-players .u-player dt {/*  role tag  */
-	margin-top: 1em;
+.g-content .m-players .u-player dt{
+	margin: 20% 0;
 	font-size: 1.5rem;
 	color: #565656;
 }
-.g-content .m-players .u-player dd {/*  role number  */
-	bottom: 0;
-	line-height: 1.75rem;
+.g-content .m-players .u-player dd{
 	background-color: #83b09a;
-	font-size: 1.1rem;
+	font-size: 1.2rem;
+	line-height: 2.2rem;
 	color: #fff;
 }
 .g-content .m-players .u-player--tools{
 	position: absolute;
-	top: 115%;
-	left: -5px;
-	width: 110%;
-	font-size: 0;
-	text-align: center;
-}
-@media screen and (max-width: 480px) and (min-width: 360px) {
-	.g-content .m-players .u-player--tools{
-			left: -3px;
-	}
-}
-@media screen and (max-width: 360px) {
-	.g-content .m-players .u-player--tools{
-			left: -2px;
-	}
+	margin-top: 10px;
+	width: 100%;
+	display: none;
+	text-align: justify;
 }
 .g-content .m-players .u-player--tools li{
-	float: left;
-	box-sizing: border-box;
-	width: 22%;
-	margin: 1.5%;
+	display: inline-block;
+	width: 22.2%;
 	padding-bottom: 22%;
 	background-color: #fff;
 	background-repeat: no-repeat;
 	background-position:center;
 }
+.g-content .m-players .u-player--tools li.placeholder{
+	padding-bottom: 0;
+}
 .g-content .m-players .u-player--tools li:nth-child(1){
 	background-image: url("images/icon_suit_knife.png");
-	background-size: 80%;
 }
 .g-content .m-players .u-player--tools li:nth-child(2){
 	background-image: url("images/icon_suit_search.png");
-	background-size: 90%;
 }
 .g-content .m-players .u-player--tools li:nth-child(3){
 	background-image: url("images/icon_suit_target.png");
-	background-size: 95%;
 }
 .g-content .m-players .u-player--tools li:nth-child(4){
 

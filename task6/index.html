@@ -5,16 +5,18 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 	<link rel="stylesheet" type="text/css" href="style.css" />
+
 </head>
 <body>
 	<div class="container">
 		<div class="g-header">
-			<i class="icon-menu"></i>
+			<i class="icon-menu" ></i>
 			<i class="icon-close"></i>
 			<p>投票</p>
 		</div>
 		<div class="g-source--music">
-			<i class="icon-play"></i>
+			<audio id="u-music" src="resource/free.mp3" preload="auto"></audio>
+			<i class="icon-play" onclick="music.play()"></i>
 			<p>发言讨论结束，大家请投票</p>
 			<i class="u-triangle"></i>
 		</div>
@@ -22,108 +24,97 @@
 			<p>点击得票数最多人的头像</p>
 			<div class="m-players-wrap">
 				<div class="m-players">
-					<dl class="u-player">
-						<dt>
-							<span>水民</span>
-						</dt>
-						<dd>
-							<span>1号</span>
-						</dd>
+					<div class="u-player">
+						<dl>
+							<dt>水民</dt>
+							<dd>1号</dd>
+						</dl>
 						<ul class="u-player--tools">
 							<li></li>
 							<li></li>
 							<li></li>
 							<li></li>
+							<li class="placeholder"></li>
 						</ul>
-					</dl>
-					<dl class="u-player">
-						<dt>
-							<span>水民</span>
-						</dt>
-						<dd>
-							<span>2号</span>
-						</dd>
-					</dl>
-					<dl class="u-player">
-						<dt>
-							<span>水民</span>
-						</dt>
-						<dd>
-							<span>3号</span>
-						</dd>
-					</dl>
-					<dl class="u-player">
-						<dt>
-							<span>水民</span>
-						</dt>
-						<dd>
-							<span>4号</span>
-						</dd>
-					</dl>
-					<dl class="u-player">
-						<dt>
-							<span>水民</span>
-						</dt>
-						<dd>
-							<span>5号</span>
-						</dd>
-					</dl>
-					<dl class="u-player">
-						<dt>
-							<span>水民</span>
-						</dt>
-						<dd>
-							<span>5号</span>
-						</dd>
-					</dl>
-					<dl class="u-player">
-						<dt>
-							<span>水民</span>
-						</dt>
-						<dd>
-							<span>5号</span>
-						</dd>
-					</dl>
-					<dl class="u-player">
-						<dt>
-							<span>水民</span>
-						</dt>
-						<dd>
-							<span>5号</span>
-						</dd>
-					</dl>
-					<dl class="u-player">
-						<dt>
-							<span>水民</span>
-						</dt>
-						<dd>
-							<span>5号</span>
-						</dd>
-					</dl>
-					<dl class="u-player">
-						<dt>
-							<span>水民</span>
-						</dt>
-						<dd>
-							<span>5号</span>
-						</dd>
-					</dl>
-					<dl class="u-player">
-						<dt>
-							<span>水民</span>
-						</dt>
-						<dd>
-							<span>5号</span>
-						</dd>
-					</dl>
-					<dl class="u-player">
-						<dt>
-							<span>水民</span>
-						</dt>
-						<dd>
-							<span>5号</span>
-						</dd>
-					</dl>
+					</div>
+					<div class="u-player">
+						<dl>
+							<dt>水民</dt>
+							<dd>1号</dd>
+						</dl>
+						<ul class="u-player--tools">
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li class="placeholder"></li>
+						</ul>
+					</div>
+					<div class="u-player">
+						<dl>
+							<dt>水民</dt>
+							<dd>1号</dd>
+						</dl>
+						<ul class="u-player--tools">
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li class="placeholder"></li>
+						</ul>
+					</div>
+					<div class="u-player">
+						<dl>
+							<dt>水民</dt>
+							<dd>1号</dd>
+						</dl>
+						<ul class="u-player--tools">
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li class="placeholder"></li>
+						</ul>
+					</div>
+					<div class="u-player">
+						<dl>
+							<dt>水民</dt>
+							<dd>1号</dd>
+						</dl>
+						<ul class="u-player--tools">
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li class="placeholder"></li>
+						</ul>
+					</div>
+					<div class="u-player">
+						<dl>
+							<dt>水民</dt>
+							<dd>1号</dd>
+						</dl>
+						<ul class="u-player--tools">
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li class="placeholder"></li>
+						</ul>
+					</div>
+					<div class="u-player">
+						<dl>
+							<dt>水民</dt>
+							<dd>1号</dd>
+						</dl>
+						<ul class="u-player--tools">
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li class="placeholder"></li>
+						</ul>
+					</div>
 				</div>
 			</div>
 			</div>
@@ -133,6 +124,6 @@
 			</div>
 		</div>
 	</div>
-
+	<script type="text/javascript" src="js.js"></script>
 </body>
 </html>
