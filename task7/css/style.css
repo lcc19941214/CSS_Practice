@@ -1,28 +1,6 @@
 /*
  * CSS Reset
  */
-html{font-size:20px}/*  初始化字体  */
-/*@media screen and (max-width: 640px) and (min-width: 540px){
-	html{
-		font-size: 18px;
-	}
-}
-@media screen and (max-width: 540px) and (min-width: 480px){
-	html{
-		font-size: 16px;
-	}
-}
-@media screen and (max-width: 480px) and (min-width: 375px){
-	html{
-		font-size: 14px;
-	}
-}
-@media screen and (max-width: 375px) and (min-width: 320px){
-	html{
-		font-size: 12px;
-	}
-}*/
-
 body,ul,ol,li,dl,dt,dd,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div{margin:0;padding:0;border:0;}
 body{background:#fafafa;color:#fff;font-family:"Microsoft Yahei","黑体",sans serif;}
 
@@ -41,6 +19,19 @@ a{
 /*
  * CSS style
  */
+.clearfix::after{/*  clear  */
+	content: ".";
+	display: block;
+	height: 0;
+	overflow: hidden;
+	visibility: hidden;
+	clear: both;
+}
+.box-wrap{/*  统一宽度1200px */
+	max-width: 1200px;
+	padding: 0 20px;
+	margin: 0 auto;
+}
 .g-header{
 	width: 100%;
 }
@@ -48,10 +39,7 @@ a{
 	background-color: #fff;
 }
 .g-header .contact{
-	max-width: 1200px;
 	height: 40px;
-	padding: 0 20px;
-	margin: 0 auto;
 }
 .g-header .contact span{/*  contact phone number  */
 	font-size: 14px;
@@ -79,14 +67,11 @@ a{
 .g-header .contact .icon-contact .icon-weibo{
 	background-position: -75px 0 ;
 }
-.g-header .m-topnav-wrap{
+.g-header .m-topnav-outter{
 	background-color: #29b078;
 }
 .g-header .m-topnav{
-	max-width: 1200px;
-	padding: 0 20px;
 	height: 100px;
-	margin: 0 auto;
 	overflow: hidden;
 }
 .g-header .m-topnav .nav{
@@ -107,6 +92,16 @@ a{
 .g-header .m-topnav a:hover{
 	border-bottom: 4px solid #fff;
 }
+/*  nav response setting  */
+@media screen and (max-width: 768px) {
+	.g-header .m-topnav{
+		height: 40px;
+		overflow: hidden;
+	}
+	.g-header .m-topnav .nav{
+		display: none;
+	}
+} 
 .g-header .m-slide{
 	position: relative;
 	height: 600px;
@@ -132,7 +127,7 @@ a{
 .g-header .m-slide .slide-state{
 	position: absolute;
 	left: 50%;
-	margin-left: -30px;
+	margin-left: -39px;
 	bottom: 22px;
 	font-size: 0;
 }
@@ -140,7 +135,7 @@ a{
 	display: inline-block;
 	width: 16px;
 	height: 16px;
-	margin: 0 2px;
+	margin: 0 5px;
 	background: url("../images/sprite.png") -121px -130px no-repeat;
 }
 .g-header .m-slide .slide-shift{
@@ -173,6 +168,82 @@ a{
 	margin-right: -42px;
 	background-position: -50px -169px;
 }
+
+.g-main-outter{/*  main content  */
+	margin: 0 auto;
+}
+.g-main{
+
+}
+.intro-row-1 {
+	padding-top: 162px;
+	overflow: hidden;
+}
+.intro-row-1 .item-outter{
+	/*width: 1288px;*/
+	width: 1296px;
+	margin-left: -49px;
+}
+.intro-row-1 .item{
+	float: left;
+	width: 224px;
+	height:239px;
+	padding: 0 49px;
+}
+.intro-row-1 .item .icon{
+	margin: auto;
+	width: 60px;
+	height: 66px;
+	background: transparent url("../images/sprite.png") 0 0 no-repeat;
+}
+.intro-row-1 .item:nth-child(1) .icon{/*  高效  */
+	background-position: 9px -36px;
+}
+.intro-row-1 .item:nth-child(2) .icon{/*  规范  */
+	background-position: -64px -36px;
+}
+.intro-row-1 .item:nth-child(3) .icon{/*  人脉  */
+	background-position: -143px -36px;
+}
+.intro-row-1 .item h3 {
+	font-size: 18px;
+	line-height: 82px;
+	color: #333;
+	text-align: center;
+}
+.intro-row-1 .item p {
+	font-size: 16px;
+	line-height: 26px;
+	color: #999;
+	text-align: justify;
+}
+.intro-row-1 .item.right{
+	background: url("../images/line_content_bg_left.png") 0 0 repeat-y;
+}
+.intro-row-1 .item.right div:first-child{
+	margin-top: 66px;
+}
+.intro-row-1 .item.right div{
+	margin-bottom: 33px;
+}
+.intro-row-1 .item.right h3{
+	line-height: 1em;
+	margin-bottom: 10px;
+	color: #26a26f;
+	text-align: left;
+}
+.intro-row-1 .item.right h3 i{
+	display: inline-block;
+	width: 13px;
+	height: 13px;
+	margin-right:  14px;
+	background: url("../images/sprite.png") 0 -132px no-repeat;
+}
+.intro-row-1 .item.right p{
+	font-weight: bold;	
+	font-size: 18px;
+}
+
 
 
 
