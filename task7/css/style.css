@@ -435,6 +435,8 @@ body{
 	background-image: url("../images/logo_qiniu.png")
 }
 .intro-row-4 .item:hover{
+	position: relative;
+	z-index: 999;
 	box-shadow: 0 0 10px 0 #ccc;
 }
 .intro-row-4 .item img{
