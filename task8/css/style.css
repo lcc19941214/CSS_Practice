@@ -10,10 +10,6 @@ body {
 	margin: 0 auto;
 	width: 1200px;
 }
-.box-1400-wrap {
-	margin: 0 auto;
-	width: 1400px;
-}
 
 /*  清楚浮动  */
 .clearfix:after{
@@ -26,7 +22,7 @@ body {
 }
 
 .g-header-wrap {
-
+	min-width: 1280px;
 }
 .g-header {
 	background-color: #fff;
@@ -56,13 +52,13 @@ body {
 	background: url("../images/sprite.png") 0 0 no-repeat;
 }
 .g-header .topbar .icon_right .wechat {
-	background-position: 
+	background-position: 0 0;
 }
 .g-header .topbar .icon_right .qq {
-	background-position: 
+	background-position: -38px 0;
 }
 .g-header .topbar .icon_right .weibo {
-	background-position: 
+	background-position: -75px 0;
 }
 
 .g-header .nav-wrap {
@@ -114,6 +110,7 @@ body {
 .g-main-wrap {
 	position: relative;
 	margin-bottom: 232px;
+	min-width: 1280px;
 }
 .g-main {
 
@@ -134,7 +131,7 @@ body {
 /*  阴影 圆角 设置  */
 .g-main .side,
 .g-main .main {
-	box-shadow: 0 1px 5px 0 #ddd;
+	box-shadow: 0 1px 6px 0 #ccc;
 	border-radius: 4px;
 	background-color: #fff;
 }
@@ -226,6 +223,7 @@ body {
 	position: relative;
 	border-top: 1px solid #d0d6d9;
 	width: 100%;
+	min-width: 1280px;
 	background-color: #29b078;
 }
 .g-footer {
